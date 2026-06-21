@@ -300,7 +300,7 @@ export default function App() {
       <header className="app-header">
         <div className="logo-section">
           <span className="logo-icon">🏦</span>
-          <span className="logo-text">Aura Mortgage</span>
+          <span className="logo-text">OnCloud Mortgage</span>
         </div>
 
         <nav className="nav-tabs">
