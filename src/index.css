@@ -3,40 +3,40 @@
    ========================================================================== */
 
 :root {
-  --bg-primary: #0a0e17;
-  --bg-secondary: #121824;
-  --bg-surface: #1a2333;
-  --bg-hover: #232e42;
+  --bg-primary: #f8fafc; /* Slate 50 */
+  --bg-secondary: #ffffff; /* Pure White */
+  --bg-surface: #f1f5f9; /* Slate 100 */
+  --bg-hover: #e2e8f0; /* Slate 200 */
   
-  --color-primary: #6366f1; /* Indigo */
-  --color-primary-glow: rgba(99, 102, 241, 0.15);
-  --color-secondary: #0ea5e9; /* Sky */
+  --color-primary: #4f46e5; /* Indigo 600 */
+  --color-primary-glow: rgba(79, 70, 229, 0.08);
+  --color-secondary: #0284c7; /* Sky 600 */
   
-  --color-success: #10b981; /* Emerald */
-  --color-success-bg: rgba(16, 185, 129, 0.1);
-  --color-success-border: rgba(16, 185, 129, 0.2);
+  --color-success: #059669; /* Emerald 600 */
+  --color-success-bg: rgba(5, 150, 105, 0.08);
+  --color-success-border: rgba(5, 150, 105, 0.15);
   
-  --color-warning: #f59e0b; /* Amber */
-  --color-warning-bg: rgba(245, 158, 11, 0.1);
-  --color-warning-border: rgba(245, 158, 11, 0.2);
+  --color-warning: #d97706; /* Amber 600 */
+  --color-warning-bg: rgba(217, 119, 6, 0.08);
+  --color-warning-border: rgba(217, 119, 6, 0.15);
   
-  --color-danger: #f43f5e; /* Rose */
-  --color-danger-bg: rgba(244, 63, 94, 0.1);
-  --color-danger-border: rgba(244, 63, 94, 0.2);
+  --color-danger: #e11d48; /* Rose 600 */
+  --color-danger-bg: rgba(225, 29, 72, 0.08);
+  --color-danger-border: rgba(225, 29, 72, 0.15);
   
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dark: #64748b;
+  --text-main: #0f172a; /* Slate 900 */
+  --text-muted: #475569; /* Slate 600 */
+  --text-dark: #64748b; /* Slate 500 */
   
-  --border-color: rgba(255, 255, 255, 0.06);
-  --border-color-active: rgba(99, 102, 241, 0.4);
+  --border-color: rgba(15, 23, 42, 0.08);
+  --border-color-active: rgba(79, 70, 229, 0.3);
   
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
   
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,7 +99,7 @@ body {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.5rem;
-  background: linear-gradient(135deg, #a5b4fc 0%, var(--color-primary) 50%, #818cf8 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.025em;
@@ -131,7 +131,7 @@ body {
 
 .tab-btn:hover {
   color: var(--text-main);
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 .tab-btn.active {
@@ -182,7 +182,7 @@ body {
 
 .stat-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(99, 102, 241, 0.2);
+  border-color: rgba(79, 70, 229, 0.25);
 }
 
 .stat-card::before {
@@ -441,7 +441,7 @@ body {
 
 .timeline-item:hover {
   transform: translateX(4px);
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 .timeline-item::before {
@@ -597,7 +597,7 @@ body {
 }
 
 .custom-table tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(0, 0, 0, 0.015);
 }
 
 .custom-table tbody tr:last-child td {
@@ -611,7 +611,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(5, 7, 12, 0.8);
+  background-color: rgba(15, 23, 42, 0.4);
   backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
