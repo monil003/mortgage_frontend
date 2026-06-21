@@ -1,4 +1,7 @@
-const API_BASE = '/api';
+const API_BASE = window.location.protocol === 'https:'
+  ? 'https://mortgage-backend-h7oc.onrender.com/api'
+  : '/api';
+
 
 const handleResponse = async (response) => {
   if (!response.ok) {
