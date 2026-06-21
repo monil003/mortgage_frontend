@@ -314,6 +314,8 @@ body {
   border-radius: var(--border-radius-lg);
   padding: 1.5rem;
   box-shadow: var(--shadow-md);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .section-header {
@@ -794,3 +796,129 @@ body {
   font-weight: 700;
   font-family: var(--font-display);
 }
+
+/* ==========================================================================
+   Mobile Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .app-header {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .logo-section {
+    justify-content: center;
+  }
+
+  .nav-tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.35rem;
+  }
+
+  .tab-btn {
+    flex: 1 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .main-content {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .runway-card {
+    grid-column: span 1;
+  }
+
+  .modal-content {
+    width: 92%;
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .tab-header-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .tab-header-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .month-picker-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .month-input {
+    flex: 1;
+  }
+
+  .alert-banner {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .section-card {
+    padding: 1rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .timeline-info {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .timeline-financials {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+    margin-top: 0.25rem;
+  }
+
+  .timeline-amount {
+    font-size: 1rem;
+  }
+
+  .custom-table th, 
+  .custom-table td {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.85rem;
+  }
+}
+
